@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.fill
+{
+        font-size: 40px;
+        font-weight: bold;
+        margin: 40px auto;
+        width: fit-content;
+        position: relative;
+     -webkit-text-fill-color: white;
+     -webkit-text-stroke:1px rgb(116, 107, 107);
+     
+}
+.fill::before
+{
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-text-fill-color: rgb(255, 94, 0);
+    -webkit-text-stroke:1px rgb(116, 112, 107);
+    width: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.fill:hover::before
+{width: 100%;
+   
+}
