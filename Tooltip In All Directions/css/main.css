@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+}
+body
+{
+    margin: 0;
+}
+button
+{
+    border: none;
+    padding: 10px;
+    margin: 70px auto;
+    display: block;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+}
+button span
+{
+position: absolute;
+width: 250px;
+background-color: #333;
+color: white;
+padding: 10px;
+left: 50%;
+transform: translateX(-50%);
+top: -47px;
+transition: 0.5s;
+}
+button span::before
+{content: "";
+    border-style: solid;
+    border-width: 4px;
+    border-color: #333 transparent transparent;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+button:hover
+{
+    overflow: visible;
+}
+/* to move the shape udder button */
+[data-postions="postions"] span
+{
+    position: absolute;
+width: 250px;
+background-color: #333;
+color: white;
+padding: 10px;
+left: 50%;
+transform: translateX(-50%);
+top: 47px;
+transition: 0.5s;
+}
+[data-postions="postions"] span::before
+{   content: "";
+    border-style: solid;
+    border-width: 4px;
+    border-color: transparent transparent #333;
+    position: absolute;
+ 
+    top: -8px;
+    bottom: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
