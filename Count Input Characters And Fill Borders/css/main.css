@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+div
+{
+    width: 300px;
+    margin: 50px auto;
+}
+div input
+{
+    width: 100%;
+border: none;
+border-bottom: 2px solid #d7d7d7;
+z-index: -1;
+
+
+}
+input:focus
+{
+    outline: none;
+}
+.progress
+{
+    position: relative;
+    background-color: aqua;
+    height: 2px;
+    top: -2px;
+    z-index: 5;
+    display: block;
+    transition: 0.2s;
+}
+.count
+{
+    display: block;
+    text-align: right;
+    margin: 5px;
+}
+.zero
+{
+    color: red;
+    font-weight: bold;
+}
