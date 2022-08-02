@@ -1,0 +1,41 @@
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    margin: 0;
+    background-color: #333;
+}
+p
+{
+    width: 0;
+    font-size: 25px;
+    margin: 25px auto;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid rgba(255, 255, 255, 80%);
+    color: rgba(255, 255, 255, 80%);
+    animation: text 2s 2s steps(22) both ,border 0.5s 2s infinite;
+}
+@keyframes text
+{
+    0%{
+width: 0%;
+    }
+    100%
+    {
+        width: 288px;
+    }
+}
+@keyframes border
+{
+    
+          0%{
+           border-right-color:rgba(255, 255, 255, 80%) ;
+            }
+            100%
+            {
+                border-right-color:rgba(236, 217, 217, 0.8) ;
+            }
+}
