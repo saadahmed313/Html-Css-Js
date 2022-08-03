@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.password
+{
+    font-weight: bold;
+    font-size: 22px;
+    background-color: #eee;
+    width: 200px;
+    text-align: center;
+    margin: 30px auto 0;
+    padding: 20px;
+    height: 64.96;
+}
+.generat
+{
+    display: block;
+    background-color: orange;
+    width: fit-content;
+    text-align: center;
+    padding: 20px;
+    border-radius: 4px;
+    margin: 10px auto;
+    cursor: pointer;
+    user-select: none;
+}
