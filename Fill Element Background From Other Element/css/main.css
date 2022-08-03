@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div
+{
+    width: 400px;
+    box-shadow: 0 0 50px rgb(233, 215, 215) ;
+    margin: 40px auto;
+    text-align: center;
+    padding: 15px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+div .number
+{
+
+ 
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    color: white;
+  margin-top: 0;
+font-weight: bold;
+}
+div p
+{
+    line-height: 1.6;
+}
+div:hover .number
+{
+box-shadow: 0 0 0 300px  red;
+}
+div:hover h2,
+div:hover p
+{
+    color: white;
+}
