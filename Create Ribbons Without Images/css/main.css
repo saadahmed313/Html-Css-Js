@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.product
+{
+    width: 400px;
+    background-color: #eee;
+    text-align: center;
+    padding: 15px;
+    margin: 40px auto;
+}
+.product h2
+{
+    background-color: aqua;
+    width: calc(100% + 80px);
+    position: relative;
+    left: -41px;
+    padding: 5px;
+}
+.product h2::before
+{
+    content: " ";
+    position: absolute;
+    border-width: 13px;
+    border-style: solid;
+    border-color: #389f9f #389f9f transparent transparent;
+    left: 0;
+    bottom: -26px;
+}
+.product h2::after
+{
+    content: " ";
+    position: absolute;
+    border-width: 13px;
+    border-style: solid;
+    border-color: transparent transparent #389f9f #389f9f;
+    right: 0;
+    bottom: 36px;
+}
